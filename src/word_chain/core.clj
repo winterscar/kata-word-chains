@@ -30,6 +30,12 @@
   [word words]
   (filter #(isNeighbour? word %1) words))
 
+;; instead of getting all neighbours (requires a full search)
+;; just get a neighbour that has distance < current distance
+
+;; if you fail to get a word that is closer, remove this word from words
+;; increase distance by one and continue. 
+
 (defn find-path
   ([start end words] (find-path start end words [start]))
   ([start end words path]
@@ -39,6 +45,8 @@
       (if (contains-str? neighbours end)
         (conj path end)
         (find-path (first neighbours) end words (conj path (first neighbours)))))))
+
+;; TODO sort words by distance to end before starting 
  
 (defn -main [start-word end-word]
   (if (= (count start-word) (count end-word))
