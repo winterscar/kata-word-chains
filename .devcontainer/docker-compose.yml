@@ -1,0 +1,13 @@
+version: '3'
+services:
+  dev:
+    image: clojure:openjdk-14-lein-alpine
+    volumes:
+      - ..:/app
+      - ~/.ssh:/.ssh-localhost:ro
+    working_dir: /app
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    ports:
+      - 8700:8700
+      - 8777:8777
+      - 9630:9630

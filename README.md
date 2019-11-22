@@ -1,44 +1,13 @@
 # word-chain
 
-FIXME: description
+Solution to our fortnightly code challenge, specifically [this](http://codekata.com/kata/kata19-word-chains/) challenge. 
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Clone the code, and open the folder with VS Code. If you have the [Remote: Docker](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed (as well as docker-desktop), VS code should prompt you to open the folder in a docker container. 
 
 ## Usage
 
-FIXME: explanation
+Run the Jack In command by pressing `ctrl+shift+p`, and type `Start a Repl Project and connect (aka Jack-In)` to load the interactive dev experience. Select Leiningen, then ok. A repl shoud open.
 
-    $ java -jar word-chain-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2019 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+You can run the code in src/word-chain.clj by pressing `ctrl+alt+c` then `enter`
