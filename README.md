@@ -11,3 +11,5 @@ Clone the code, and open the folder with VS Code. If you have the [Remote: Docke
 Run the Jack In command by pressing `ctrl+shift+p`, and type `Start a Repl Project and connect (aka Jack-In)` to load the interactive dev experience. Select Leiningen, then ok. A repl shoud open.
 
 You can run the code in src/word-chain.clj by pressing `ctrl+alt+c` then `enter`
+
+foo
